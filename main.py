@@ -1,26 +1,25 @@
-import requests , os , psutil , sys , jwt , pickle , json , binascii , time , urllib3 , base64 , datetime , re , socket , threading , ssl , pytz , aiohttp
+import requests, os, psutil, sys, jwt, pickle, json, binascii, time, urllib3, base64, datetime, re, socket, threading, ssl, pytz, aiohttp
 from protobuf_decoder.protobuf_decoder import Parser
-from xC4 import * ; from xHeaders import *
+from xC4 import *
+from xHeaders import *
 from datetime import datetime
 from google.protobuf.timestamp_pb2 import Timestamp
 from concurrent.futures import ThreadPoolExecutor
 from threading import Thread
-from MG24GAMER import DEcwHisPErMsG_pb2 , MajoRLoGinrEs_pb2 , PorTs_pb2 , MajoRLoGinrEq_pb2 , sQ_pb2 , Team_msg_pb2
 from cfonts import render, say
 import asyncio
 import signal
-import sys
-# Add these imports if not already present
-import re
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad, unpad
 import random
-from Crypto.Cipher import AES
-from Crypto.Util.Padding import pad, unpad
 
-
-
+# Disable insecure request warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)  
+
+# MG24GAMER import মুছে দেওয়া হয়েছে
+# সরাসরি UID ও Password main.py তে বসানো
+UID = "4521009279"
+PASSWORD = "879D6CEAC0AB38E7BDDDCF2336BA3C9E570AD134CB6DC3E4CAECF23DD5BF0D61"
 
 # Enhanced Configuration Variables
 ADMIN_UID = "8804135237"
